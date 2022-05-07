@@ -1,0 +1,28 @@
+h1 {
+    font-family: sans-serif;
+    text-align: center;
+    text-decoration: underline overline;
+}
+
+.font-modify {
+    font-weight: 600;
+    font-size: 3em;
+    line-height: 80px;
+}
+
+body {
+    font-size: 16px;
+    font-style: italic;
+}
+
+#yellow {
+  background-color: yellow;
+}
+
+#red {
+  background-color: red;
+}
+
+#brown {
+  background-color: brown;
+}
