@@ -4,4 +4,9 @@
 
 li:hover {
     background-color: red;
+
+}
+
+li:active {
+    color: blueviolet;
 }
