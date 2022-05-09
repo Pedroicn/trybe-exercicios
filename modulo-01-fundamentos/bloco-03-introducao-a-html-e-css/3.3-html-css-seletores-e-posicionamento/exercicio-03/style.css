@@ -1,3 +1,7 @@
 .centralize {
     text-align: center;
 }
+
+li:hover {
+    background-color: red;
+}
