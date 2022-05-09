@@ -4,9 +4,13 @@
 
 li:hover {
     background-color: red;
-
+    
 }
 
 li:active {
     color: blueviolet;
+}
+
+li {
+    list-style: none;
 }
