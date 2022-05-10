@@ -2,3 +2,11 @@ div:hover {
     border: 5px solid blue;
     
 }
+
+h3 {
+    color: blue;
+}
+
+.italic {
+    font-style: italic;
+}
