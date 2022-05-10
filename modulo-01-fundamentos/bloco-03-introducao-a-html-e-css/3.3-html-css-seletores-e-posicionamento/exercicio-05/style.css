@@ -1,3 +1,11 @@
 ol {
     background-color: yellow;
 }
+
+.color-par {
+    color: green;
+}
+
+.color-impar {
+    text-transform: uppercase;    
+}
