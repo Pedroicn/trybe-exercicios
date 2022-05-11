@@ -8,6 +8,7 @@ h1 {
     height: 50px;
     text-align: center;
     width: 200px;
+    margin: auto;
   }
 
   .second {
@@ -16,6 +17,8 @@ h1 {
     height: 50px;
     text-align: center;
     width: 300px;
+    display: inline-block;
+    margin: 0;
   }
 
   .third {
@@ -24,4 +27,17 @@ h1 {
     height: 50px;
     text-align: center;
     width: 300px;
+    display: inline-block;
+    margin: 0;
+  }
+
+  #alinhamento {
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+
+  }
+
+  #article-1 {
+    
   }
