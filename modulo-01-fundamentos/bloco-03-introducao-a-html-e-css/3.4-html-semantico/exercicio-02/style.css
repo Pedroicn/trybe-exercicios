@@ -3,12 +3,13 @@ main
   max-width: ;
 }
 
-.article 
+article 
 {
   width: 600px;
+  text-align: center;
 }
 
-.article img
+article img
 {
   width: 600px;
 }
