@@ -1,3 +1,8 @@
+main 
+{
+  max-width: ;
+}
+
 .article 
 {
   width: 600px;
@@ -8,22 +13,29 @@
   width: 600px;
 }
 
-.section-1 img 
+h1 
 {
-  
+  background-color: purple;
+  height: 100px;
+  margin: 0;
+  text-align: center;
+  padding-top: 30px;
 }
 
-.section-2
+header nav 
 {
-  width
+  background-color: blueviolet;
+  margin: 0;
+  color: black;
 }
+ #cabecalho 
+ {
+   color: black;
+   font-weight: bold;
+   margin: 20px;
+ }
 
-.section-3
-{
-
-}
-
-.section-4
-{
-
-}
+ body
+ {
+   background-color: 	rgb(238, 130, 238);
+ }
