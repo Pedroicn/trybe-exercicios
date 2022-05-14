@@ -1,0 +1,42 @@
+main 
+{
+  max-width: ;
+}
+
+article 
+{
+  width: 600px;
+  text-align: center;
+}
+
+article img
+{
+  width: 600px;
+}
+
+h1 
+{
+  background-color: purple;
+  height: 100px;
+  margin: 0;
+  text-align: center;
+  padding-top: 30px;
+}
+
+header nav 
+{
+  background-color: blueviolet;
+  margin: 0;
+  color: black;
+}
+ #cabecalho 
+ {
+   color: black;
+   font-weight: bold;
+   margin: 20px;
+ }
+
+ body
+ {
+   background-color: 	rgb(238, 130, 238);
+ }
