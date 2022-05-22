@@ -100,13 +100,19 @@
       rightSection.appendChild(firstList);
       let numbers = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
       let numbersList = document.createElement('li');
-      
+
       for(let i = 0; i < numbers.length; i += 1){
         let numbersList = document.createElement('li');
         numbersList.innerHTML = numbers[i];
         firstList.appendChild(numbersList)
       }
 
+      //9 - Adicione 3 tags h3, todas sendo filhas do main criado no passo 2.
+      let newTag;
+      for(let i = 0; i < 3; i += 1){
+        newTag = document.createElement('h3');
+        criaMain.appendChild(newTag)
+      }
 
     </script>
   </body>
