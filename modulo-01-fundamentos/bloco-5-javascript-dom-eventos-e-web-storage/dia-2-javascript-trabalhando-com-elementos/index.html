@@ -55,9 +55,15 @@
       }
     </style>
   </head>
-  <body>
+  <body id="corpo">
     <script>
       // COLOQUE SEU CÓDIGO AQUI
+      // 1- Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body;
+      let corpo = document.getElementById('corpo');
+      let criaH1 = document.createElement('h1');
+      criaH1.innerText = 'Exercício 5.2 - JavaScript DOM '
+      corpo.appendChild(criaH1);
+
     </script>
   </body>
 </html>
