@@ -63,6 +63,11 @@
       document.getElementById('descricao').innerText = 'TRABALHANDO COMO DESENVOLVEDOR'
 
 //  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+      let tags = document.getElementsByTagName('p')
+      for (let i = 0; i < tags.length; i += 1){
+        console.log(tags[i].innerHTML)
+      }
+
        
     </script>
   </body>
