@@ -153,7 +153,6 @@ function createTask(tarefa) {
   let myTasks = document.querySelector('.my-tasks');
   let createSpanTag = document.createElement('span');
   createSpanTag.innerHTML = tarefa;
-  createSpanTag.style.display = 'block'
   myTasks.appendChild(createSpanTag);
 
 }
@@ -172,3 +171,21 @@ function criaLegendaNaTarefa(cor) {
   document.querySelector('.my-tasks').appendChild(newDiv);
 }
 criaLegendaNaTarefa('blue');
+
+// 🚀 Exercício 9:
+// Implemente uma função que adiciona um evento que, ao clicar no elemento com a tag <div> referente a cor da sua tarefa, atribua a este elemento a classe task selected, ou seja, quando sua tarefa possuir a classe task selected, ela estará selecionada.
+// Ao clicar novamente no elemento, a sua classe deverá voltar a ser somente task, ou seja, esta tarefa está deixando de ser uma tarefa selecionada.
+
+function taskSelected() {
+  let legendaTarefa = document.querySelector('.task');
+
+  legendaTarefa.addEventListener('click', function(event) {
+    if(event.target.className === 'task') {
+      event.target.className = 'task selected'
+    }
+    else {
+      event.target.className = 'task'
+    }
+  })
+}
+taskSelected();
