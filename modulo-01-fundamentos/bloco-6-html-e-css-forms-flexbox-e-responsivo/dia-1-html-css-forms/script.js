@@ -16,3 +16,13 @@ function clearForms() {
   textArea.value = '';
 }
 
+let agree = document.querySelector('#acordo');
+let submitButton = document.querySelector("#submit")
+submitButton.disabled = !agree.checked
+// submitButton.addEventListener('click', autorizaImagen)
+
+// function autorizaImagen() {
+//   let agree = document.querySelector('#acordo');
+//   let formulario = document.querySelectorAll('input')
+//   for(let i = 0; i < formu)
+// }
