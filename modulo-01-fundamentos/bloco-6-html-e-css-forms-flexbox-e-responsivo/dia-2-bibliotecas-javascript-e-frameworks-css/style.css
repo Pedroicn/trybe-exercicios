@@ -1,0 +1,21 @@
+.container {
+  margin-bottom: 15px;
+  margin: 10px auto 0px auto;
+  width: 70%;
+}
+
+textarea {
+  resize: none;
+}
+
+main {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.form-check-input {
+  margin-left: 50px;
+}
+
