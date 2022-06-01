@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Preencha os dados abaixo e concorra a viagem</h1>
+    <main id="main">
+      <form id="formulario" action="">
+        <br>
+        <div>
+          <label for="name">Nome</label>
+          <input id="name" type="text" minlength="10" maxlength="40" name="name" required>
+          <br>
+          <br>
+          <label for="email">Email</label> 
+          <input id="email" type="email" minlength="10" maxlength="50" name="e-mail" required>
+        </div>
+        
+        
+        <br>
+        <br>
+        
+
+        <p>Destino preferido:</p>
+        
+        <input type="radio" id="cidade" class="destino" name="destiny" value="city">
+        <label for="cidade">Cidade
+        <input type="radio" id="campo" class="destino" name="destiny" value="country">
+        <label for="campo">Campo
+        <input type="radio" id="praia" class="destino" name="destiny" value="beach">
+        <label for="praia">Praia  
+        <input type="radio" id="montanha" class="destino" name="destiny" value="mountain">
+        <label for="montanha">Montanha  
+        <br>
+        <br>
+        <h3>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</h3>
+    
+        <textarea name="" id="text-area" cols="50" rows="15" maxlength="500" name="why"></textarea>
+        <br> 
+        <br>
+        <label for="data">Melhor data:</label>
+        <input id="data" type="date" name="date">
+    
+        <label for="promo">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+        <br>
+        <input id="promo" type="checkbox" name="is-available"> 
+        <label for=""></label>Concordo
+        <br> 
+        <label for="acordo">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+        <br>
+        <input id="acordo" type="checkbox" name="is-available"> 
+        <label for=""></label>Concordo
+        <br>
+        <br>
+        <section>
+          <button id="submit" type="submit">Enviar</button>
+          <button id="clear-button" type="button">Limpar</button>
+        </section>
+      </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
