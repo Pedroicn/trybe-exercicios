@@ -11,7 +11,7 @@
 }
 
 body {
-
+  font-size: x-large;
 }
 
 article {
@@ -43,5 +43,5 @@ figure {
 }
 
 figcaption {
-  font-size: .8em;
+  
 }
