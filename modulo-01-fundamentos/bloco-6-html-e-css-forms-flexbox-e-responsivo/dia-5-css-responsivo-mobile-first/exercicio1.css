@@ -12,6 +12,7 @@
 
 body {
   font-size: x-large;
+  margin: 3%;
 }
 
 article {
@@ -40,6 +41,7 @@ section {
 
 figure {
 	margin: 0;
+  margin-top: 50px;
 }
 
 figcaption {
