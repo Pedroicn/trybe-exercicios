@@ -1,10 +1,17 @@
 html {
   box-sizing: border-box;
+  background-color: aliceblue;
+  margin: 20px;
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+p {
+  font-family: 'Courier New', Courier, monospace;
+}
+
 
 @media screen and (max-width: 400px) {
   h3, h1, h2 {
@@ -33,7 +40,18 @@ html {
 }
 
 @media screen and (min-width: 401px) and (max-width: 800px) {
-  
+  header {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+  }
+
+  header nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    
+  }
 }
 
 @media screen and (min-width: 801px) {
