@@ -1,0 +1,86 @@
+html {
+  box-sizing: border-box;
+  background-color: aliceblue;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+p {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+@media screen and (max-width: 400px) {
+  h3, h1, h2 {
+    text-align: center;
+  }
+
+  p {
+    margin: 20px;
+    line-height: 25px;
+    font-size: large;
+    text-align: justify;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 800px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+  }
+
+  header nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    
+  }
+}
+
+@media screen and (min-width: 801px) {
+  header {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+  }
+
+  header nav ul{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    
+  }
+
+  p {
+    max-width: 800px;
+  }
+
+  section {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  section h2 {
+    text-align: center;
+  }
+}
