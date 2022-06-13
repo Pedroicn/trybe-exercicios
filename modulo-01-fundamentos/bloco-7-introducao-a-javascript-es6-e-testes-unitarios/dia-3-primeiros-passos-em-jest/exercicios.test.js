@@ -1,4 +1,4 @@
-const {myRemove, sum} = require('./exercicios')
+const {myRemove, sum, myFizzBuzz} = require('./exercicios')
 
 describe('Teste função soma', () => {
   it('checks if 4 + 5 equals 9', () => {
@@ -30,4 +30,22 @@ describe('Teste função remove item array', () => {
   it('checks if returns expected array', () => {
     expect(myRemove([1, 2, 3, 4], 5)).not.toContain(5)
   });
+});
+
+describe('Teste função myfizzbuzz', () => {
+  it('checks if num === 15 returns fizzbuzz ', () => {
+    expect(myFizzBuzz(15)).toMatch('fizzbuzz')
+  });
+
+  it('checks if num === 9 returns fizz ', () => {
+    expect(myFizzBuzz(9)).toMatch('fizz')
+  });
+
+  it('checks if num === 7 returns 7', () => {
+    expect(myFizzBuzz(7)).toEqual(7)
+  })
+
+  it('checks if typeof num !== number returns false', () => {
+    expect(myFizzBuzz('hello')).toEqual(false);
+  })
 })
