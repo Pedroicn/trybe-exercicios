@@ -3,6 +3,11 @@ const sum = (a, b) => {
     throw new Error('parameters must be numbers');
   }
   return a + b;
-} 
+}
 
-module.exports = sum;
+const myRemove = (array, item) => {
+  let index = array.indexOf(item);
+  array.splice(index, 1)
+  return array
+}
+module.exports = {myRemove, sum};
