@@ -1,5 +1,6 @@
-const {myRemove, sum, myFizzBuzz} = require('./exercicios')
+const {myRemove, sum, myFizzBuzz, decode, encode, techList} = require('./exercicios')
 
+// Exercicios 1
 describe('Teste função soma', () => {
   it('checks if 4 + 5 equals 9', () => {
     expect(sum(4,5)).toEqual(9);
@@ -18,6 +19,7 @@ describe('Teste função soma', () => {
   })
 })
 
+// Exercicios 2
 describe('Teste função remove item array', () => {
   it('checks if returns expected array', () => {
     expect(myRemove([1, 2, 3, 4], 3)).not.toContain(3)
@@ -32,6 +34,7 @@ describe('Teste função remove item array', () => {
   });
 });
 
+// Exercicios 3
 describe('Teste função myfizzbuzz', () => {
   it('checks if num === 15 returns fizzbuzz ', () => {
     expect(myFizzBuzz(15)).toMatch('fizzbuzz')
@@ -43,9 +46,29 @@ describe('Teste função myfizzbuzz', () => {
 
   it('checks if num === 7 returns 7', () => {
     expect(myFizzBuzz(7)).toEqual(7)
-  })
+  });
 
   it('checks if typeof num !== number returns false', () => {
     expect(myFizzBuzz('hello')).toEqual(false);
-  })
+  });
+});
+
+// Exercicios 4
+describe('Testes funçoes encode e decode', () => {
+  it('checks if encode and decode are functions', () => {
+    expect(typeof encode && typeof decode).toEqual('function');
+  });
+
+  it('checks if encode converts a e i o u in 1 2 3 4 5', () => {
+    expect(encode('aeiou')).toEqual('12345');
+  });
+
+  it('checks if decode converts 1 2 3 4 5 in a e i o u', () => {
+    expect(decode('12345')).toEqual('aeiou');
+  });
+
+  it('checks if decode returns the same amount of characters', () => {
+    expect(decode('12345')).toHaveLength(5);
+  });
 })
+
