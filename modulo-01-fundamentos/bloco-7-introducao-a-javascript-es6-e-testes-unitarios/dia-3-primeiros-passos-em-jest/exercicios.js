@@ -20,7 +20,7 @@ function myFizzBuzz(num) {
 }
 
 function encode(string) {
-  // seu código aqui
+ 
   let newString = '';
   for(let i = 0; i < string.length; i+=1){
     if(string[i] === 'a'){
@@ -42,7 +42,7 @@ function encode(string) {
 }
 
 function decode(string2) {
-  // seu código aqui
+  
   let newString2 = '';
   for(let i = 0; i < string2.length; i+=1){
     if(string2[i] === '1'){
@@ -63,9 +63,9 @@ function decode(string2) {
   return newString2
 }
 
-// Desafio 10
+
 function techList(array, name) {
-  // seu código aqui
+ 
   arrayOrdenado = array.sort();
   let objetos = [];
   if(array.length === 0){
@@ -77,4 +77,83 @@ function techList(array, name) {
   }
   return objetos;
 }
-module.exports = {myRemove, sum, myFizzBuzz, decode, encode, techList};
+
+function hydrate(string) {
+  let numbers = /\d+/g;
+  let stringNumbers = string.match(numbers);
+  let arrayNumbers = [];
+  let sumNumbers = 0;
+  let resultado;
+  for(let i = 0; i < stringNumbers.length; i += 1){
+    arrayNumbers.push(parseInt(stringNumbers[i]));
+  }
+  for(let j = 0; j < arrayNumbers.length; j += 1){
+    sumNumbers += arrayNumbers[j];
+  }
+  if(sumNumbers > 1){
+    resultado = sumNumbers + ' copos de água';
+  }else{
+    resultado = sumNumbers + ' copo de água';
+  }
+  
+  return resultado;
+}
+
+// Dados
+const professionalBoard = [
+  {
+    id: '8579-6',
+    firstName: 'Ana',
+    lastName: 'Gates',
+    specialities: ['UX', 'Design'],
+  },
+  {
+    id: '5569-4',
+    firstName: 'George',
+    lastName: 'Jobs',
+    specialities: ['Frontend', 'Redux', 'React', 'CSS'],
+  },
+  {
+    id: '4456-4',
+    firstName: 'Leila',
+    lastName: 'Zuckerberg',
+    specialities: ['Context API', 'RTL', 'Bootstrap'],
+  },
+  {
+    id: '1256-4',
+    firstName: 'Linda',
+    lastName: 'Bezos',
+    specialities: ['Hooks', 'Context API', 'Tailwind CSS'],
+  },
+  {
+    id: '9852-2-2',
+    firstName: 'Jeff',
+    lastName: 'Cook',
+    specialities: ['Ruby', 'SQL'],
+  },
+  {
+    id: '4678-2',
+    firstName: 'Paul',
+    lastName: 'Dodds',
+    specialities: ['Backend'],
+  },
+];
+
+// Pesquisa
+const searchEmployee = (id, detail) => {
+  // Implemente seu código aqui
+  let resultadoBusca;
+  for (let i = 0; i < professionalBoard.length; i += 1) {
+    if (id === professionalBoard[i].id) {
+      resultadoBusca = professionalBoard[i][detail];
+      
+    }  
+  }
+  if (resultadoBusca === undefined) {
+    throw new Error('Informação indisponível')
+  }
+  return resultadoBusca
+};
+
+
+module.exports = {myRemove, sum, myFizzBuzz, decode, encode, techList, hydrate, searchEmployee};
