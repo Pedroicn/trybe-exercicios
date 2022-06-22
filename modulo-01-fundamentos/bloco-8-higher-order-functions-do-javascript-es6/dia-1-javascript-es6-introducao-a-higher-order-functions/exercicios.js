@@ -15,6 +15,7 @@ const newEmployees = () => {
 };
 console.log(newEmployees());
 
+// EXERCICIO 2
 // Desenvolva uma HOF que retorna o resultado de um sorteio. Esta HOF irá gerar um número aleatório entre 1 e 5 recebendo como parâmetros o número apostado e uma função que checa se o número apostado é igual ao número sorteado. O retorno da sua HOF deve ser uma string (Ex: "Tente novamente" ou "Parabéns você ganhou").
 
 
@@ -34,3 +35,23 @@ function numbersDraw(number, callback) {
 }
 
 console.log(numbersDraw(3, compareNumbers))
+
+const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+
+function countAnswers(gabarito, respostas) {
+  let nota = 0;
+  for (let i = 0; i < respostas.length; i += 1) {
+    if (respostas[i] === gabarito[i]) {
+      nota += 1
+    } else if (respostas[i] === 'N.A') {
+      nota += 0
+    } else {nota -= 0.5}
+  }
+  return nota;
+}
+
+function totalAnswers(gabarito, respostas, callback) {
+  return callback(gabarito, respostas)
+}
+console.log(totalAnswers(RIGHT_ANSWERS, STUDENT_ANSWERS, countAnswers))
