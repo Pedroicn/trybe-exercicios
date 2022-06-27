@@ -5,7 +5,8 @@ const arrays = [
   [true],
   [4, 5, 6],
 ];
-
-function flatten() {
-  // escreva seu código aqui
+arrays
+function flatten(array) {
+  return array.reduce( (acc, crr) => acc = acc.concat(crr) )
 }
+console.log(flatten(arrays))
