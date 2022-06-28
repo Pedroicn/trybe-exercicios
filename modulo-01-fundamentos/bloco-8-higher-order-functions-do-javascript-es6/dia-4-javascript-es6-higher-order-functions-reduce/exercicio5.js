@@ -6,6 +6,9 @@ const names = [
   'Abeladerco', 'Adieidy', 'Alarucha',
 ];
 
-function containsA() {
-  // escreva seu código aqui
+function containsA(array) {
+  const uni = array.reduce((acc, name) => acc + name).split('');
+  return uni.reduce((acc, crr) => (crr === 'a' || crr === 'A') ? acc + 1 : acc, 0);
+  
 }
+console.log(containsA(names))
