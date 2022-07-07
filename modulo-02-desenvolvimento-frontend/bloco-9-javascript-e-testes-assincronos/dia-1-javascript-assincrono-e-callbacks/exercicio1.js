@@ -1,4 +1,4 @@
-// const planetDistanceFromSun = ({ name, distanceFromSun: { value, measurementUnit } }) =>
+const planetDistanceFromSun = ({ name, distanceFromSun: { value, measurementUnit } }) =>
   `${name} is ${value} ${measurementUnit} apart from the Sun`;
 
   const mars = {
