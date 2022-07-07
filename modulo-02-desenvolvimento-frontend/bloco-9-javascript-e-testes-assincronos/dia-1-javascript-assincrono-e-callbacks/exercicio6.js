@@ -19,7 +19,13 @@ const handleError = (errorReason) =>
   console.log(`Error getting temperature: ${errorReason}`);
 
 // definição da função sendMarsTemperature...
-
+function sendMarsTemperature(callback, error) {
+  const msgSucesso = Math.random() <= 0.6;
+  setTimeout(() => {
+    if(msgSucesso) callback(getMarsTemperature());
+    else error('Robot is busy')
+  }, 2000)
+}
 // imprime "It is currently 47ºF at Mars", por exemplo, ou "Error getting temperature: Robot is busy"
 sendMarsTemperature(temperatureInFahrenheit, handleError);
 
