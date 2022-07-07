@@ -5,3 +5,16 @@ const uppercase = (str, callback) => {
     callback(str.toUpperCase());
   }, 500);
 };
+
+it('Verifica se as letras transformam em maiuscula', (done) => {
+  uppercase('trybe', (str) => {
+    try {
+      expect(str).toBe('TRYBE');
+      done();
+    } catch (error) {
+      done(error);
+    }
+  });
+
+
+})
