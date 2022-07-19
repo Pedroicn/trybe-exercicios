@@ -1,5 +1,10 @@
+html {
+  background-color: gray;
+}
+
 .App {
   text-align: center;
+  
 }
 
 .pokedex {
@@ -12,8 +17,11 @@
 #pokemon {
   display: flex;
   border: 1px solid black;
-  width: 500px;
+  width: 400px;
   border-radius: 5px;
   margin: 10px;
   justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: rgb(233, 193, 193);
+  box-shadow: 5px 5px black;
 }
